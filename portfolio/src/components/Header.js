@@ -1,20 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import carousel from "./components/carousel";
-import './App.css';
-import Navbar from "./components/Navbar";
+import React from 'react'
 
-
-function App() {
-  return (
-
-    
-    <div className = "App">
-      < Navbar />
-      < carousel />
-
-     
-      <div className="jumbotron">
-            <h1 className="display-4">Welcome</h1>
+const Header = () => {
+    return (
+        <div className="jumbotron">
+            <h1 className="display-4">Hello, world!</h1>
             <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr className="my-4"></hr> 
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -23,17 +12,10 @@ function App() {
                 </p>
                
         </div>
-
-
-    
-
-
-     
-</div>
-    
-  
-   
-  );
+        
+            
+            
+        
+    )
 }
-
-export default App;
+export default Header
